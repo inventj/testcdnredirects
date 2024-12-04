@@ -1,1 +1,18 @@
-{"kind":"CDN","version":"1","metadata":{"envTypes":["dev"]},"data":{"redirects":{"rules":[{"name":"redirect-absolute","when":{"reqProperty":"path","equals":"/idonotlongerexist"},"action":{"type":"redirect","status":301,"location":"https://example.com/page"}},{"name":"redirect-relative","when":{"reqProperty":"path","equals":"/anotherpagethatdoesnotexist"},"action":{"type":"redirect","location":"/anotherpage"}}]}},"redirects":"- name: redirect-absolute\n  when:\n    reqProperty: path\n    equals: /idonotlongerexist\n  action:\n    type: redirect\n    location: https://example.com/page\n- name: redirect-relative\n  when:\n    reqProperty: path\n    equals: /anotherpagethatdoesnotexist\n  action:\n    type: redirect\n    location: /anotherpage\n"}
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  redirects:
+    rules:
+      - name: redirect-absolute
+        when: { reqProperty: path, equals: "/idonotlongerexist" }
+        action:
+          type: redirect
+          status: 301
+          location: https://example.com/page
+      - name: redirect-relative
+        when: { reqProperty: path, equals: "/anotherpagethatdoesnotexist" }
+        action:
+          type: redirect
+          location: /anotherpage
