@@ -6,42 +6,42 @@ metadata:
 data:
   redirects:
     rules:
-      - name: redirect-sf
+      - name: redirect_dsfdfs_dsfsdfdsfsdfsdf
         when:
           reqProperty: path
           equals: dsfdfs
         action:
           type: redirect
           location: dsfsdfdsfsdfsdf
-      - name: dsfsdf-relative
+      - name: redirect_dsdsf_/anotherpagekjhk
         when:
           reqProperty: path
           equals: dsdsf
         action:
           type: redirect
           location: /anotherpagekjhk
-      - name: redirect-sf
+      - name: redirect_dsfdfs_dsfsdfdsfsdfsdf
         when:
           reqProperty: path
           equals: dsfdfs
         action:
           type: redirect
           location: dsfsdfdsfsdfsdf
-      - name: dsfsdf-relative
+      - name: redirect_dsdsf_/anotherpagekjhk
         when:
           reqProperty: path
           equals: dsdsf
         action:
           type: redirect
           location: /anotherpagekjhk
-      - name: redirect-sf
+      - name: redirect_dsfdfs_dsfsdfdsfsdfsdf
         when:
           reqProperty: path
           equals: dsfdfs
         action:
           type: redirect
           location: dsfsdfdsfsdfsdf
-      - name: dsfsdf-relative
+      - name: redirect_dsdsf_/anotherpagekjhk
         when:
           reqProperty: path
           equals: dsdsf
