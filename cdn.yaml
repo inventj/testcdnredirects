@@ -5,7 +5,7 @@ metadata:
     - dev
 data:
   redirects:
-    rules: |
+    rules:
       - name: redirect-absolute
         when:
           reqProperty: path
