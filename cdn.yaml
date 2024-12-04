@@ -1,18 +1,24 @@
-kind: "CDN"
-version: "1"
+kind: CDN
+version: '1'
 metadata:
-  envTypes: ["dev","stage","prod"]
+  envTypes:
+    - dev
+    - stage
+    - prod
 data:
   redirects:
-    rules:
-      - name: redirect-absolute
-        when: { reqProperty: path, equals: "/idonotlongerexist" }
+    rules: |
+      - name: redirect-absolutepowah
+        when:
+          reqProperty: path
+          equals: /idonotlongerexistnerd
         action:
           type: redirect
-          status: 301
-          location: https://example.com/page
+          location: /mynaughtypage
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpagethatdoesnotexist" }
+        when:
+          reqProperty: path
+          equals: /anotherpagethatdoesnotexist
         action:
           type: redirect
-          location: /anotherpage
+          location: /anotherpageupdate
