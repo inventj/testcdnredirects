@@ -6,17 +6,17 @@ metadata:
 data:
   redirects:
     rules:
-      - name: redirect-absolute
+      - name: redirect-sf
         when:
           reqProperty: path
-          equals: /idonotlongerexist
+          equals: dsfdfs
         action:
           type: redirect
-          location: https://example.com/page
-      - name: redirect-relative
+          location: dsfsdfdsfsdfsdf
+      - name: dsfsdf-relative
         when:
           reqProperty: path
-          equals: /anotherpagethatdoesnotexist
+          equals: dsdsf
         action:
           type: redirect
-          location: /anotherpage
+          location: /anotherpagekjhk
