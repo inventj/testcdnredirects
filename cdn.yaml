@@ -1,1 +1,18 @@
-override
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  redirects:
+    rules:
+      - name: redirect-absolute
+        when: { reqProperty: path, equals: "/idonotlongerexist" }
+        action:
+          type: redirect
+          status: 301
+          location: https://example.com/page
+      - name: redirect-relative
+        when: { reqProperty: path, equals: "/anotherpagethatdoesnotexist" }
+        action:
+          type: redirect
+          location: /anotherpage
