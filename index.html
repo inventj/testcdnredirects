@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDN Redirect Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Left Pane */
+    .left-pane {
+      width: 80%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .tab:hover, .tab.active {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    .redirect-list {
+      margin-top: 20px;
+    }
+
+    .redirect-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .redirect-item input, .redirect-item select {
+      margin-right: 15px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .redirect-item input[type="text"] {
+      width: 30%;
+    }
+
+    .redirect-item select {
+      width: 20%;
+    }
+
+    /* Right Pane */
+    .right-pane {
+      width: 20%;
+      background-color: #f9f9f9;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .right-pane .block {
+      margin-bottom: 20px;
+    }
+
+    .right-pane .block-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .pie-chart {
+      height: 150px;
+      background-color: #ddd;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .tips {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    .header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    CDN Redirect Manager
+  </div>
+
+  <div class="container">
+    <!-- Left Pane -->
+    <div class="left-pane">
+      <div class="tabs">
+        <div class="tab active">All</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+      </div>
+
+      <div class="redirect-list">
+        <div class="redirect-item">
+          <input type="text" placeholder="From URL">
+          <input type="text" placeholder="To URL">
+          <select>
+            <option>301</option>
+            <option>302</option>
+            <option>N/A</option>
+          </select>
+        </div>
+        <div class="redirect-item">
+          <input type="text" placeholder="From URL">
+          <input type="text" placeholder="To URL">
+          <select>
+            <option>301</option>
+            <option>302</option>
+            <option>N/A</option>
+          </select>
+        </div>
+        <div class="redirect-item">
+          <input type="text" placeholder="From URL">
+          <input type="text" placeholder="To URL">
+          <select>
+            <option>301</option>
+            <option>302</option>
+            <option>N/A</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Pane -->
+    <div class="right-pane">
+      <!-- Usage Block -->
+      <div class="block">
+        <div class="block-title">Usage</div>
+        <div class="pie-chart">
+          <!-- Placeholder for pie chart -->
+          <p style="text-align: center; padding-top: 50px; color: #666;">Pie Chart</p>
+        </div>
+      </div>
+
+      <!-- Tips Block -->
+      <div class="block">
+        <div class="block-title">Tips</div>
+        <div class="tips">
+          <p>Tip 1: Use 301 redirects for permanent redirects.</p>
+          <p>Tip 2: Avoid redirect chains as they can slow down loading times.</p>
+        </div>
+      </div>
+
+      <!-- Logo Block -->
+      <div class="logo">
+        <img src="https://via.placeholder.com/100" alt="Logo">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
